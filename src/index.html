@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Jovian Careers</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/jovian-favicon.png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about job openings at Jovian and submit your application now">
+  <meta name="keywords" content="data science, software development, jobs">
+  <meta name="author" content="Jovian">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Jovian Careers">
+  <meta property="og:description" content="Learn about job openings at Jovian and submit your application now">
+  <meta property="og:image" content="/jovian_meta.png">
+  <meta name="twitter:title" content="Jovian Careers">
+  <meta name="twitter:description" content="Learn about job openings at Jovian and submit your application now">
+  <meta name="twitter:image" content="/jovian-card-image.png">
+</head>
+
+<body>
+  <div id="navbar">
+    <img id="jovian-logo" src="images/jovian_logo.svg" alt="Jovian Logo">
+  </div>
+
+  <div id="banner-div">
+    <img src="images/banner-image-3.jpg" alt="banner" id="banner">
+  </div>
+  <h1>About Jovian</h1>
+  <div id="about-jovian">
+    <div id="description">
+      <p id="description-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+      </p>
+
+      <p>
+        We also offer 2 industry-focused bootcamps:
+      <ol>
+        <li>
+          <a href="https://jovian.com/learn/web-development-with-html-and-css">
+            Jovian Full Stack Developer
+          </a>
+        </li>
+        <li>
+          <a href="https://jovian.com/learn/machine-learning-with-python-zero-to-gbms">
+            Jovian Data Scientist
+          </a>
+        </li>
+      </ol>
+      </p>
+    </div>
+    <div id="team">
+      <img id="team-image" src="images/team (1).jpg" alt="team">
+    </div>
+
+
+  </div>
+
+
+  <h2>Job Opportunities</h2>
+
+
+  <div id="jobs">
+    <table id="jobs-table" border="1">
+      <tr class="job-table-header">
+        <th rowspan="2">Job Title</th>
+        <th colspan="2">Location</th>
+        <th rowspan="2">Salary</th>
+        <th rowspan="2">Posted On</th>
+      </tr>
+      <tr class="job-table-header">
+        <th>City</th>
+        <th>Country</th>
+      </tr>
+      <tr class="job-data-row">
+        <td>Frontend Developer</td>
+        <td>Lagos</td>
+        <td>Nigeria</td>
+        <td>NGR 300,000</td>
+        <td>Mar 3, 2025</td>
+      </tr>
+      <tr class="job-data-row">
+        <td>Full Stack Developer</td>
+        <td>San Franscisco</td>
+        <td>USA</td>
+        <td>USD 50,000</td>
+        <td>Mar 3, 2025</td>
+      </tr>
+      <tr class="job-data-row">
+        <td>Data Scientist</td>
+        <td>Abuja</td>
+        <td>Nigeria</td>
+        <td>NGR 400,000</td>
+        <td>Mar 3, 2025</td>
+      </tr>
+      <tr class="job-data-row">
+        <td>ML Engineer</td>
+        <td id="remote" colspan="2">Remote</td>
+        <td>NGR 300,000</td>
+        <td>Mar 3, 2025</td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="application">
+    <h2>Job Application</h2>
+    <form action="https://formspree.io/f/xeolojlo" id="application-form" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="name">Full Name</label> <br>
+        <input type="text" id="name" name="Full Name" required placeholder="John Doe">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label> <br>
+        <input type="text" id="email" name="Email Address" required placeholder="jdoe@example.com">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label> <br>
+        <input type="text" id="phone" name="Phone Number" required placeholder="+234 704 345 6789">
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth</label> <br>
+        <input type="date" id="dob" name="DOB" required>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Position Applied for</label> <br>
+        <select name="posistion" id="posistion" required>
+          <option value="">Select an option</option>
+          <option value="Frontend Developer">Frontend Developer</option>
+          <option value="Full Stack Developer">Full Stack Developer</option>
+          <option value="Data Scientist">Data Scientist</Data></option>
+          <option value="ML Engineer">ML Engineer</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="resume">Upload Resume</label> <br>
+        <input type="file" id="resume" name="Resume" required accept=".pdf, .doc, .docx">
+      </div>
+
+      <div class="form-group">
+        <label for="coverletter">Cover Letter</label> <br>
+        <textarea name="coverletter" id="coverletter" rows="8"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="terms">
+          <input type="checkbox" id="terms" name="Terms" required>
+          I agree to the terms and conditions</label>
+
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+
+
+  <div id="footer">
+    <ul>
+      <li>
+        <a href="https://jovian.com/learn" target="_blank">
+          Courses
+        </a>
+      </li>
+      <li>
+        <a href="https://jovian.com/learn" target="_blank">
+          Programs
+        </a>
+      </li>
+      <li>
+        <a href="https://jovian.com/learn" target="_blank">
+          Youtube
+        </a>
+      </li>
+
+    </ul>
+    <span>&copy;2023, Jovian</span>
+  </div>
+</body>
+
+</html>
